@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-    background-image: url(../images/pattern-curve.svg), url(../images/pattern-bg.svg) ;
-    background-position: bottom, top 1rem center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, contain;
-} */
+[data-div].hidden {
+    display: none;
+}

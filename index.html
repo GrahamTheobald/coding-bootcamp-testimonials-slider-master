@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">  
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 </head>
 <body class=" flex justify-center items-center min-h-screen h-px">
@@ -15,15 +16,15 @@
       bg-[url(../images/pattern-bg.svg)] bg-contain bg-no-repeat bg-center bg-[300%]
       ">
       <div class=" relative shadow-lg ">
-        <div class=" flex w-64 md:w-[30rem] rounded-md overflow-hidden"">
+        <div data-container class=" flex w-64 md:w-[30rem] rounded-md overflow-hidden"">
           <img data-pic="1" class=" max-w-full" src="./images/image-tanya.jpg" alt="tanya">
-          <img data-pic="2" class=" max-w-full" src="./images/image-john.jpg" alt="john">
+          <img data-pic="2" class=" max-w-full hidden" src="./images/image-john.jpg" alt="john">
         </div>
         <div class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-lg
         md:left-0 md:translate-x-full
         flex gap-8 p-3 md:p-4 rounded-full bg-white">
-          <img class=" w-2 md:w-3"src="./images/icon-prev.svg" alt="prev">
-          <img class=" w-2 md:w-3"src="./images/icon-next.svg" alt="next">
+          <img data-prev class=" w-2 md:w-3"src="./images/icon-prev.svg" alt="prev">
+          <img data-next class=" w-2 md:w-3"src="./images/icon-next.svg" alt="next">
         </div>
       </div>
     </div>
@@ -48,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div data-div="2" class=" hidden md:hidden relative basis-1/2 md:h-full md:flex md:flex-col md:justify-center md:items-center md:pl-8 
+    <div data-div="2" class=" hidden relative basis-1/2 md:h-full md:flex md:flex-col md:justify-center md:items-center md:pl-8 
     bg-[url(../images/pattern-curve.svg)] bg-no-repeat bg-bottom bg-contain">
       <div class=" md:translate-x-1/4">
         <p class=" mb-6 pt-12 px-4 text-DarkBlue font-[300] text-center
