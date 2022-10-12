@@ -3,36 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css">  
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
-
-  Tanya Sinclair
-  UX Engineer
-
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
-
-  John Tarkpor
-  Junior Front-end Developer
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class=" flex justify-center items-center min-h-screen h-px">
+  <main class=" flex flex-col h-full justify-center items-center
+    md:flex-row-reverse
+    font-Inter">
+    <div class=" flex justify-center items-center basis-1/2 h-full w-full md:pr-20 md:max-h-[80vh]
+      bg-[url(../images/pattern-bg.svg)] bg-contain bg-no-repeat bg-center bg-[300%]
+      ">
+      <div class=" relative shadow-lg ">
+        <div class=" flex w-64 md:w-[30rem] rounded-md overflow-hidden"">
+          <img data-pic="1" class=" max-w-full" src="./images/image-tanya.jpg" alt="tanya">
+          <img data-pic="2" class=" max-w-full" src="./images/image-john.jpg" alt="john">
+        </div>
+        <div class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-lg
+        md:left-0 md:translate-x-full
+        flex gap-8 p-3 md:p-4 rounded-full bg-white">
+          <img class=" w-2 md:w-3"src="./images/icon-prev.svg" alt="prev">
+          <img class=" w-2 md:w-3"src="./images/icon-next.svg" alt="next">
+        </div>
+      </div>
+    </div>
+    <div data-div="1" class=" relative basis-1/2 md:h-full md:flex md:flex-col md:justify-center md:items-center md:pl-8 
+    bg-[url(../images/pattern-curve.svg)] bg-no-repeat bg-bottom bg-contain">
+      <div class=" md:translate-x-1/4">
+        <p class=" mb-6 pt-12 px-4 text-DarkBlue font-[300] text-center
+        md:text-3xl md:text-left md:p-0
+        bg-[url(../images/pattern-quotes.svg)] bg-no-repeat bg-top bg-[length:100px_100px]
+        md:bg-[position:left_4rem_top_-2rem] md:pt-16 ">
+        “ I’ve been interested in coding for a while but never taken the jump, until now. 
+        I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+        excited about the future. ”
+        </p>
+        <div class=" flex flex-col items-center md:flex-row  md:self-start md:gap-2">
+          <h2 class=" font-bold">
+            Tanya Sinclair
+          </h2>
+          <p class=" text-GrayishBlue">
+            UX Engineer
+          </p>
+        </div>
+      </div>
+    </div>
+    <div data-div="2" class=" hidden md:hidden relative basis-1/2 md:h-full md:flex md:flex-col md:justify-center md:items-center md:pl-8 
+    bg-[url(../images/pattern-curve.svg)] bg-no-repeat bg-bottom bg-contain">
+      <div class=" md:translate-x-1/4">
+        <p class=" mb-6 pt-12 px-4 text-DarkBlue font-[300] text-center
+        md:text-3xl md:text-left md:p-0
+        bg-[url(../images/pattern-quotes.svg)] bg-no-repeat bg-top bg-[length:100px_100px]
+        md:bg-[position:left_4rem_top_-2rem] md:pt-16 ">
+        “ If you want to lay the best foundation possible I’d recommend taking this course. 
+        The depth the instructors go into is incredible. I now feel so confident about 
+        starting up as a professional developer. ”
+        </p>
+        <div class=" flex flex-col items-center md:flex-row  md:self-start md:gap-2">
+          <h2 class=" font-bold">
+            John Tarkpor
+          </h2>
+          <p class=" text-GrayishBlue">
+            Junior Front-end Developer
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
